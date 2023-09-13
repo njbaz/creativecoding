@@ -1,8 +1,64 @@
 body {
   color: red;
+  background-color: greenyellow;
+  text-align: center;
 }
 
 h1 {
   color: red;
   font-family: monospace;
+}
+
+ul,li,h3{
+  font-size: 30px;
+  list-style: none;
+  color: blue;
+  
+}
+#pagetitle{
+  color: red;
+  font-family: monospace;
+  font-size: 100px;
+  transform: rotateY(45deg);
+	animation: rotateAnimation 5s linear infinite;
+}
+@keyframes rotateAnimation {
+	from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);}
+}
+
+.destination{
+ background-color:aqua;
+ font-size:40px;
+
+}
+
+
+#photos{
+  border: 5px solid;
+  border-color: greenyellow;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+
+}
+
+
+.destphoto{
+  display: inline-flex;
+  flex-direction: column;
+  width: 20%;
+  padding:10px;
+}
+table{
+  padding: 10px;
+  border: 1px solid black;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+td{
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 35px;
 }
