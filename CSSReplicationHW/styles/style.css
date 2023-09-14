@@ -1,0 +1,75 @@
+/* apply global styles */
+
+body {
+  color:black;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+  font-size: 60px;
+}
+/* style the container */
+.outercont {
+	width: 100%;
+  height:100%;
+  /* adding this to the parent "intiates" the flex mode of it all */
+  display: flex;
+  /* tell the parent which direction to put the children */
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* add spacing & more styling to children. this is horizontal and 
+  vertical alignemnt of children inside the parent*/
+  justify-content: left;
+  align-items: center;
+  gap: 50px;
+
+}
+
+.card {
+  background: lightgray;
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 1rem .25em;
+  box-shadow: 2px 2px 2px 2px grey;
+  font-size: 30px;
+  justify-content: space-between;
+  border-radius: 25px;
+}
+
+.one{
+  background-color: white;
+  border: 0.5px solid grey;
+}
+
+.two{
+  background-color: black;
+  color: white;
+  
+}
+
+.three{
+  background-color:white;
+  border: 0.5px solid purple;
+}
+
+.four{
+  background-color: white;
+  border: 0.5px solid blue;
+}
+
+
+.threehead{
+  background-color: lightpink;
+  box-shadow: 2px 2px 2px 2px grey;
+
+}
+
+.fourhead{
+  color: red;
+
+}
