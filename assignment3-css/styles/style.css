@@ -7,13 +7,20 @@ body {
 
 }
 
-h1{
-  font-size: 60px;
+
+
+.content{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.content-inner{
+  width:80%
+}
+
 /* style the container */
 .outercont {
-	width: 100%;
-  height:100%;
   /* adding this to the parent "intiates" the flex mode of it all */
   display: flex;
   /* tell the parent which direction to put the children */
@@ -21,11 +28,12 @@ h1{
   flex-wrap: wrap;
   /* add spacing & more styling to children. this is horizontal and 
   vertical alignemnt of children inside the parent*/
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
-  gap: 50px;
 
 }
+
+
 
 .card {
   background: lightgray;
@@ -71,5 +79,10 @@ h1{
 
 .fourhead{
   color: red;
+
+}
+
+h1{
+  font-size: 60px;
 
 }
