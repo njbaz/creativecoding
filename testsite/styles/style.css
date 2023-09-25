@@ -1,58 +1,7 @@
-* {
-  box-sizing: border-box;
+#starGrey:hover{
+  fill:blue;
+  stroke-width: 8px;
+  stroke: white;
+  transform: translateY(-10px);
+  transform: translateX(-10px);
 }
-
-html {
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.outer-cont {
-  background: darkgray;
-  border: 1px solid black;
-	width: 100%;
-  height:100%;
-  /* adding this to the parent "intiates" the flex mode of it all */
-  display: flex;
-  /* tell the parent which direction to put the children */
-  flex-direction: row;
-  /* add spacing & more styling to children. this is horizontal and 
-  vertical alignemnt of children inside the parent*/
-  justify-content: center;
-  align-items: center;
-
-}
-
-.rect {
-  background: lightgray;
-  width: 75%;
-  height: 75%;
-  border: 1px solid black;
-  margin: 15px;
-  display: flex;
-  /* tell the parent which direction to put the children */
-  flex-direction: row;
-  /* add spacing & more styling to children. this is horizontal and 
-  vertical alignemnt of children inside the parent*/
-  justify-content: center;
-  align-items: center;
-}
-
-.smallrect {
-  background: white;
-  border: 1px solid black;
-  width: 75%;
-  height: 75%;
-  margin: 15px;
-}
-
-
-
