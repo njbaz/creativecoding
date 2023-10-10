@@ -1,64 +1,92 @@
 body {
-  background-color:  #151719;
+  background-image: url("https://removal.ai/wp-content/uploads/2021/09/black-background-04-coolbackgrounds.png");
+  background-size: cover;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 
+#instructions{
+  font-size: 50px;
+  color:white;
+  width: 500px;
+}
+
+
+#welcome{
+  display: flex;
+  flex-wrap: wrap;
+  width:1000px;
+  height:1000px;
+}  
+
+#welcome > div{
+  width: 200px;
+  height:200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 60px;
+  color:white;
+}
 /* create boxes for paragraph texts */
 p {
   position: absolute;
   width: 200px;
   background-color: #f0f0f0;
   padding: 10px;
+  font-size: 30px;
+  box-shadow: 10px black;
 }
 
-#output{
-  width:80%;
-  height:80%;
-}
 /* add a hover feature */
 p:hover{
-  border: 2px solid white;
+  border: 2px solid black;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
-#entrance{
-  display:flex;
-  justify-content: center;
-}
-
-
-/* welcome text animation */
-.welcometext {
-  position: relative;
-  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
-  font-size: 60px;
-}
-.welcometext span {
-  position: relative;
-  display: inline-block;
-  color: #fff;
-  text-transform: uppercase;
-  animation: welcometext 2s infinite;
-  animation-delay: calc(.1s * var(--i));
-  
-}
-
-@keyframes welcometext {
-  0%,40%,100% {
-    transform: translateY(0)
-  }
-  20% {
-    transform: translateY(-20px)
-  }
-}
 
 #clickedParagraphs{
-  color:white;
+  width: 1000px;
+  height:400px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  font-size: 30px;
+  box-shadow: 10px 10px black;
+  display: none;
 }
 
 ul,li{
   list-style-type: none;
+}
+
+#showpoem{
+  position:absolute;
+  width:150px;
+  height:150px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  top:0px;
+  left:0px;
+  background-color: grey;
+  color:white;
+}
+
+#endscreenbutton{
+  position:absolute;
+  font-size:30px;
+  top:1100px;
+  left:2000px;
+  background-color: grey;
+  color:white;
+}
+
+.instructionparagraphs{
+  color:white;
+  background-color: black;
+  width:500px;
+  font-size:20px;
+  text-align: left;
 }

@@ -1,0 +1,16 @@
+body{
+    background-color: white;
+}
+
+#explanation{
+    padding: 50px;
+    background-image: url("https://removal.ai/wp-content/uploads/2021/09/black-background-04-coolbackgrounds.png");
+    color:white;
+    font-size: 30px;
+}
+
+#header{
+    background-color: black;
+    color:white;
+    padding: 50px;
+}

@@ -23,7 +23,7 @@ function getRandomElementsFromArray(array, numElements) {
 //create  a random x and y
 function getRandomPosition() {
   const x = Math.random() * (window.innerWidth - 400);
-  const y = Math.random() * (window.innerHeight - 30);
+  const y = Math.random() * (window.innerHeight - 100);
   return { x, y };
 }
 
@@ -55,7 +55,7 @@ async function displayRandomParagraphs() {
 //add list items to the empty div called "clickedParagraphs" as they're clicked
 function updateClickedParagraphsDiv() {
   const clickedParagraphsDiv = document.getElementById('clickedParagraphs');
-  clickedParagraphsDiv.innerHTML = '<h2>Your Poem:</h2><ul>';
+  clickedParagraphsDiv.innerHTML = '<h2>Your Poem</h2><ul>';
   clickedParagraphs.forEach(paragraphText => {
     clickedParagraphsDiv.innerHTML += `<li>${paragraphText}</li>`;
   });
@@ -68,7 +68,6 @@ function hideParagraphOnClick(paragraph) {
   paragraph.addEventListener('click', () => {
     paragraph.style.display = 'none';
     clickedParagraphs.push(paragraph.textContent);
-
     updateClickedParagraphsDiv(); 
   });
 }
@@ -77,5 +76,17 @@ function hideParagraphOnClick(paragraph) {
 //run displayRandomParagraphs function to show all random array options on the screen
 displayRandomParagraphs();
 
-//console the clicked text to make sure it's getting stored right
-console.log('Clicked Paragraphs: ',clickedParagraphs)
+//create a button that allows the viewer to see their combined poem while clearing the unused lines 
+//create a variable for the button
+
+//create a function to show the clickedParagaphs div and hide the output div when the button is clicked and hides the button
+function showPoem() {
+  const clickedParagraphs = document.getElementById('clickedParagraphs');
+  clickedParagraphs.style.display = (clickedParagraphs.style.display === 'none' || clickedParagraphs.style.display === '') ? 'block' : 'none';
+  const output = document.getElementById('output');
+  if (output) {
+    output.style.display = 'none';
+  const showpoem = document.getElementById('showpoem');
+  if (showpoem) {
+    showpoem.style.display = 'none';}
+}}
