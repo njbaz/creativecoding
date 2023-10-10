@@ -1,7 +1,9 @@
+/* end screen css because it's different from the other 2 pages*/
 body{
     background-color: white;
 }
 
+/* add same background image to just the explanation part*/
 #explanation{
     padding: 50px;
     background-image: url("https://removal.ai/wp-content/uploads/2021/09/black-background-04-coolbackgrounds.png");
@@ -9,6 +11,7 @@ body{
     font-size: 30px;
 }
 
+/* keep the header simple */
 #header{
     background-color: black;
     color:white;

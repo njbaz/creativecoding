@@ -76,9 +76,6 @@ function hideParagraphOnClick(paragraph) {
 //run displayRandomParagraphs function to show all random array options on the screen
 displayRandomParagraphs();
 
-//create a button that allows the viewer to see their combined poem while clearing the unused lines 
-//create a variable for the button
-
 //create a function to show the clickedParagaphs div and hide the output div when the button is clicked and hides the button
 function showPoem() {
   const clickedParagraphs = document.getElementById('clickedParagraphs');

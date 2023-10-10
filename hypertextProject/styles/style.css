@@ -1,3 +1,4 @@
+/* applicable to all body (unless otherwise styled)*/
 body {
   background-image: url("https://removal.ai/wp-content/uploads/2021/09/black-background-04-coolbackgrounds.png");
   background-size: cover;
@@ -7,13 +8,15 @@ body {
   min-height: 100vh;
 }
 
+
+/* instructions on home page*/
 #instructions{
   font-size: 50px;
   color:white;
   width: 500px;
 }
 
-
+/* setting up the sporadic welcome text */
 #welcome{
   display: flex;
   flex-wrap: wrap;
@@ -30,7 +33,7 @@ body {
   font-size: 60px;
   color:white;
 }
-/* create boxes for paragraph texts */
+/* create boxes for paragraph texts on poem space */
 p {
   position: absolute;
   width: 200px;
@@ -47,7 +50,7 @@ p:hover{
 
 }
 
-
+/* hide clicked paragraphs when clicked.... */
 #clickedParagraphs{
   width: 1000px;
   height:400px;
@@ -58,10 +61,12 @@ p:hover{
   display: none;
 }
 
+/* for complete poem, no list style so it looks like a poem */
 ul,li{
   list-style-type: none;
 }
 
+/* show poem button in poem space*/
 #showpoem{
   position:absolute;
   width:150px;
@@ -74,6 +79,7 @@ ul,li{
   color:white;
 }
 
+/* end screen button in poem space*/
 #endscreenbutton{
   position:absolute;
   font-size:30px;
@@ -83,6 +89,7 @@ ul,li{
   color:white;
 }
 
+/* instructions on home page*/
 .instructionparagraphs{
   color:white;
   background-color: black;
