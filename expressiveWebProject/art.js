@@ -1,7 +1,7 @@
 let trails = [];
-
+let margin=300;
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth-margin, windowHeight-margin);
 }
 
 function draw() {
@@ -21,6 +21,9 @@ function draw() {
 
   // Create a new trail and add it to the array
   trails.push(new Trail(mouseX, mouseY));
+  stroke(0);
+  strokeWeight(8);
+  rect(0,0,windowWidth-margin,windowHeight-margin);
 }
 
 // Trail class

@@ -13,7 +13,7 @@ function draw() {
   background(255);
 
   // try experimenting with this
-  let gridSize = 50;
+  let gridSize = 10;
 
   // the video has pixels just like an image!
   video.loadPixels();
@@ -29,7 +29,7 @@ function draw() {
       
       // draw a circle at the current location
       // using the diameter we calculated
-      fill(255,0,0,50);
+      fill(0,0,255,50);
       noStroke();
       
         noStroke();
