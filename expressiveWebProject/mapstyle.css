@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .flex-row {
+    display: flex;
+  }
+  
+  .image-cell {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .image-cell img {
+    width: 20%; /* Set the width of your images */
+    height: 20%; /* Set the height of your images */
+  }
+  
