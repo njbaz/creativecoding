@@ -6,9 +6,10 @@ let inhaleSpeedSlider, exhaleSpeedSlider; // Slider objects
 let inhaleSpeed = 0.5; // Speed of inhale motion
 let exhaleSpeed = 0.5; // Speed of exhale motion
 let inhale = true; // Flag to switch between inhale and exhale
+let margin=1000;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth-margin, windowHeight-margin);
 
   
   // Inhale slider setup
@@ -22,7 +23,10 @@ function setup() {
 
 function draw() {
   background(255);
-
+  fill(255);
+  stroke(0);
+  strokeWeight(8);
+  rect(0,0,windowWidth-margin,windowHeight-margin);
   // Calculate the position of the center
   let x = width / 2;
   let y = height / 2;
@@ -69,7 +73,6 @@ function draw() {
   // Update inhaleSpeed and exhaleSpeed based on sliders
   inhaleSpeed = inhaleSpeedSlider.value();
   exhaleSpeed = exhaleSpeedSlider.value();
-  
-  
+
 }
 
