@@ -4,25 +4,63 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    height: 50vh;
+    background-image: url("photoAssets/background.jpg");
   }
   
   .flex-row {
     display: flex;
+    width:70%;
+    height:20%;
   }
   
-  .image-cell {
+
+  .image-cell a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid #ccc;
-    padding: 10px;
+    padding: 50px;
     margin: 5px;
   }
-  
-  .image-cell img {
-    width: 20%; /* Set the width of your images */
-    height: 20%; /* Set the height of your images */
+
+  .image-cell a img {
+    /* width: 50%;
+    height: 50%; */
+    transition: box-shadow 0.3s ease-in-out;
   }
-  
+
+  .image-cell a:hover img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+ 
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%; /* Position the tooltip below the text */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
