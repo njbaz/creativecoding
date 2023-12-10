@@ -16,10 +16,12 @@ h1{
 }
 
 
-p{
+p,a,form,input,button{
     font-size: 50px;
 }
 
-a{
-    font-size: 50px;
+
+form,input,button{
+    font-family:"Grandiflora One", sans-serif; 
+    text-align: center;
 }
