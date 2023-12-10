@@ -14,11 +14,11 @@ function setup() {
   
   // Inhale slider setup
   inhaleSpeedSlider = createSlider(0.2, 1, inhaleSpeed, 0.01);
-  inhaleSpeedSlider.position(windowWidth-2*margin, windowHeight-margin+200);
+  inhaleSpeedSlider.position(margin+20, margin+200);
 
   // Exhale slider setup
   exhaleSpeedSlider = createSlider(0.2, 1, exhaleSpeed, 0.01);
-  exhaleSpeedSlider.position(windowWidth-2*margin, windowHeight-margin+150);
+  exhaleSpeedSlider.position(margin+20, margin+250);
 }
 
 function draw() {
