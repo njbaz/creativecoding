@@ -1,7 +1,7 @@
 let sounds = []; // Array to store the loaded sounds
 let currentSoundIndex = 0; // Index of the currently playing sound
 let isPlaying = false; // Flag to track whether music is currently playing
-let margin = 500;
+let margin = 1000;
 
 function preload() {
   // Load your audio files
@@ -17,7 +17,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth-margin, windowHeight-margin);
-  frameRate(5);
+  // frameRate(5);
   // Create buttons for each sound
   for (let i = 0; i < sounds.length; i++) {
     createButton('Option ' + (i + 1)).mousePressed(() => toggleSound(i));
@@ -30,21 +30,27 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(0);
 
   if (isPlaying) {
     // Get the amplitude (volume) of the currently playing sound
-    background(220, 150);
     textAlign(CENTER);
     let level = amplitude.getLevel();
     let size = map(level, 0, 1, 0, 500);
     stroke(0);
-    fill(size,0,255);
-    //still playing with this
-    bezier(size, width/2, 10, size/2, width/2, size*3, 15, 80);
-    ellipse(width/2, height/2, size/2, size);
+    // fill(size,0,255);
+    for (let x = 0; x < width; x=x+200) {
+      fill(size,0,255);
+      noStroke();
+       ellipse(x, height/2, 150, size*2);
+    }
+
   }
-}
+  
+
+
+  }
+
 
 function toggleSound(index) {
   // Stop the currently playing sound

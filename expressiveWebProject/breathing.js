@@ -14,11 +14,11 @@ function setup() {
   
   // Inhale slider setup
   inhaleSpeedSlider = createSlider(0.2, 1, inhaleSpeed, 0.01);
-  inhaleSpeedSlider.position(20, height + 20);
+  inhaleSpeedSlider.position(windowWidth-2*margin, windowHeight-margin+200);
 
   // Exhale slider setup
   exhaleSpeedSlider = createSlider(0.2, 1, exhaleSpeed, 0.01);
-  exhaleSpeedSlider.position(20, height + 50);
+  exhaleSpeedSlider.position(windowWidth-2*margin, windowHeight-margin+150);
 }
 
 function draw() {
@@ -30,7 +30,7 @@ function draw() {
   // Calculate the position of the center
   let x = width / 2;
   let y = height / 2;
-
+  
 
   // Draw the circles around the main circle
   for (let i = 0; i < circleCount; i++) {
@@ -53,7 +53,7 @@ function draw() {
     }
 
     // Draw the smaller circle
-    fill(120);
+    fill(173,216,230);
     noStroke();
     ellipse(targetX, targetY, circleRadius * 2, circleRadius * 2);
   }

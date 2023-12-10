@@ -27,8 +27,8 @@ body {
   }
 
   .image-cell a img {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     transition: box-shadow 0.3s ease-in-out;
   }
 
@@ -53,8 +53,9 @@ body {
 
   .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 250px;
     background-color: #555;
+    font-size: 50px;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -70,5 +71,6 @@ body {
 
   h1{
     margin-bottom: 20px;
-    font-size: larger;
+    font-size: 100px;
+
   }

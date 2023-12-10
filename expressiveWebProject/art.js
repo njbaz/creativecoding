@@ -1,5 +1,5 @@
 let trails = [];
-let margin=300;
+let margin=1000;
 function setup() {
   createCanvas(windowWidth-margin, windowHeight-margin);
 }
@@ -22,7 +22,7 @@ function draw() {
   // Create a new trail and add it to the array
   trails.push(new Trail(mouseX, mouseY));
   stroke(0);
-  strokeWeight(8);
+  strokeWeight(16);
   rect(0,0,windowWidth-margin,windowHeight-margin);
 }
 
@@ -43,7 +43,7 @@ class Trail {
   display() {
     noStroke();
     fill(0, this.alpha);
-    ellipse(this.x, this.y, 20, 20);
+    ellipse(this.x, this.y, 50, 50);
   }
 }
 

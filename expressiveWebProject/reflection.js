@@ -1,5 +1,5 @@
 let video;
-let margin = 500;
+let margin = 1000;
 function setup() {
   createCanvas(windowWidth-margin, windowHeight-margin);
   video = createCapture(VIDEO);
@@ -23,8 +23,6 @@ video.loadPixels();
 
       fill(0,0,255,50);
       noStroke();
-      
-        noStroke();
           for (let i = 0; i < 10; i ++) {
 
           ellipse(x+gridSize/20, y+gridSize/2, dia/3, dia);
