@@ -30,7 +30,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(255);
 
   if (isPlaying) {
     // Get the amplitude (volume) of the currently playing sound

@@ -8,6 +8,7 @@ body {
       justify-content: center;
       height: 100vh;
       background-image: url("photoAssets/background.jpg");
+      background-size: cover;
     }
 
 h1{
@@ -16,7 +17,7 @@ h1{
 }
 
 
-p,a,form,input,button{
+p,a,form,input,button,li{
     font-size: 50px;
 }
 

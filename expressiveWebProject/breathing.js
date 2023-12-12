@@ -24,9 +24,7 @@ function setup() {
 function draw() {
   background(255);
   fill(255);
-  stroke(0);
-  strokeWeight(8);
-  rect(0,0,windowWidth-margin,windowHeight-margin);
+
   // Calculate the position of the center
   let x = width / 2;
   let y = height / 2;
