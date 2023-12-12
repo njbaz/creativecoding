@@ -18,12 +18,9 @@ function draw() {
       trails.splice(i, 1);
     }
   }
-
   // Create a new trail and add it to the array
   trails.push(new Trail(mouseX, mouseY));
-  stroke(0);
-  strokeWeight(16);
-  rect(0,0,windowWidth-margin,windowHeight-margin);
+
 }
 
 // Trail class
